@@ -10,6 +10,7 @@ public class Elementos {
 	public By campoCpf = By.id("cpf-input");
 	public By btnContinuar = By.xpath("//button[text()='Continuar']");
 	public By msgError = By.id("error-message");
+	public By msgErrorNF = By.xpath("//p[text()='O CPF fornecido não é de um funcionário.']");
 	
 	//Dados Pessoais
 	
@@ -27,5 +28,6 @@ public class Elementos {
 	public By dataNasc = By.xpath("//input[@name='dataBirthday']");	
 	public By textoDadosPessoais = By.xpath("//h2[contains(text(),'Dados Pessoais')]");
 	public By btnAvancar = By.xpath("//button[@type='button']");
+	
 	
 }

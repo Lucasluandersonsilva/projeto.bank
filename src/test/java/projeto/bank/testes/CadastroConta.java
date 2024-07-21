@@ -25,7 +25,7 @@ public class CadastroConta extends Executa {
 	}
 
 	
-	//@Test
+	@Test
 	public void cpfEmBranco() {
 		
 		metodo.clicar(elemento.btnContinuar);
@@ -34,12 +34,12 @@ public class CadastroConta extends Executa {
 		
 	}
 	
-	//@Test
+	@Test
 	public void cpfENaoFuncionario() {
-		metodo.preencher(elemento.campoCpf, "104.104.104-79");
+		metodo.preencher(elemento.campoCpf, "104.104.104-48");
 		metodo.clicar(elemento.btnContinuar);
 		metodo.esperarElementoVisivel(elemento.msgError, 5);
-		metodo.validarTexto(elemento.msgError, "O CPF fornecido não é de um funcionário.");
+		metodo.validarTexto(elemento.msgErrorNF, "O CPF fornecido não é de um funcionário.");
 		
 		
 	}
